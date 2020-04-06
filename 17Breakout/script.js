@@ -3,12 +3,13 @@ const closeBtn = document.getElementById('close-btn');
 const rules = document.getElementById('rules');
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-
+//initilize score and no of bricks
 let score = 0;
 const brickRowCount = 9;
 const brickColumnCount = 5;
 // Create ball props
 const ball = {
+  //the initial position of ball on the center of canvas
   x: canvas.width / 2,
   y: canvas.height / 2,
   size: 10,
@@ -48,16 +49,18 @@ for (let i = 0; i < brickRowCount; i++) {
   }
 }
 
-// Draw ball on canvas
+//function to draw ball on the canvus
 function drawBall() {
+  //drawing using path
   ctx.beginPath();
+  //create ball on the center of canvas with radius of pi
   ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
   ctx.fillStyle = '#0095dd';
   ctx.fill();
   ctx.closePath();
 }
 
-// Draw paddle on canvas
+//function to draw paddle
 function drawPaddle() {
   ctx.beginPath();
   ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
@@ -66,7 +69,7 @@ function drawPaddle() {
   ctx.closePath();
 }
 
-// Draw score oon canvas
+//funcion to print score
 function drawScore() {
   ctx.font = '20px Arial';
   ctx.fillText(`Score: ${score}`, canvas.width - 100, 30);
@@ -78,6 +81,7 @@ function drawBricks() {
     column.forEach(brick => {
       ctx.beginPath();
       ctx.rect(brick.x, brick.y, brick.w, brick.h);
+      //check visibility of the brick if the bisibility is true the brick will have color else will be transparent
       ctx.fillStyle = brick.visible ? '#0095dd' : 'transparent';
       ctx.fill();
       ctx.closePath();
@@ -85,7 +89,7 @@ function drawBricks() {
   });
 }
 
-// Move paddle on canvas
+//funciton to move paddle
 function movePaddle() {
   paddle.x += paddle.dx;
 
@@ -104,17 +108,15 @@ function moveBall() {
   ball.x += ball.dx;
   ball.y += ball.dy;
 
-  // Wall collision (right/left)
+  // Wall collision (right/left) the x asis
   if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
     ball.dx *= -1; // ball.dx = ball.dx * -1
   }
 
-  // Wall collision (top/bottom)
+  // Wall collision (top/bottom) the y axis
   if (ball.y + ball.size > canvas.height || ball.y - ball.size < 0) {
     ball.dy *= -1;
   }
-
-  // console.log(ball.x, ball.y);
 
   // Paddle collision
   if (
@@ -144,14 +146,14 @@ function moveBall() {
     });
   });
 
-  // Hit bottom wall - Lose
+  //if the ball hits the bottom make all the bricks visible and set score 0
   if (ball.y + ball.size > canvas.height) {
     showAllBricks();
     score = 0;
   }
 }
 
-// Increase score
+//function to increase score
 function increaseScore() {
   score++;
 
@@ -160,14 +162,14 @@ function increaseScore() {
   }
 }
 
-// Make all bricks appear
+//function to make bricks appear
 function showAllBricks() {
   bricks.forEach(column => {
     column.forEach(brick => (brick.visible = true));
   });
 }
 
-// Draw everything
+//functino to resraw canvas
 function draw() {
   // clear canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -188,19 +190,20 @@ function update() {
 
   requestAnimationFrame(update);
 }
-
+//initilize 
 update();
 
-// Keydown event
+//function to handle key left and right
 function keyDown(e) {
+  //if the key pressed is right change the dx to positive along x axis
+  //else change the paddle movement to negative
   if (e.key === 'Right' || e.key === 'ArrowRight') {
     paddle.dx = paddle.speed;
   } else if (e.key === 'Left' || e.key === 'ArrowLeft') {
     paddle.dx = -paddle.speed;
   }
-}
 
-// Keyup event
+}
 function keyUp(e) {
   if (
     e.key === 'Right' ||
@@ -211,11 +214,8 @@ function keyUp(e) {
     paddle.dx = 0;
   }
 }
-
-// Keyboard event handlers
+//event listenters
 document.addEventListener('keydown', keyDown);
 document.addEventListener('keyup', keyUp);
-
-// Rules and close event handlers
 rulesBtn.addEventListener('click', () => rules.classList.add('show'));
 closeBtn.addEventListener('click', () => rules.classList.remove('show'));
