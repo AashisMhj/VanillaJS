@@ -1,0 +1,11 @@
+create canvas context
+create and draw draw ball
+create and draw paddle
+create bricks
+draw score
+add update function to animate using request animation
+move the paddle using key listnener
+move ball
+add wall boundries
+increase score when bricks break
+lose resraw bricks, reset score
