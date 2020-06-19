@@ -1,0 +1,41 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images{
+  background-color: #f69909;
+  margin: 5px;
+  width: 75%;
+}
+.form-layout{
+  align-items: center;
+  width: 100%;
+  background-color: #789098;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.form-layout .form-input{
+  background-color: #ff0000;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.btn{
+  cursor: pointer;
+  display: inline;
+  float: left;
+}
+.btn :hover{
+  background: #00ff00;
+}
+
+.encrypt{
+  display: flex;
+  flex-direction: row;
+}
