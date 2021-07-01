@@ -1,0 +1,25 @@
+start
+create a new object of BTree
+when user inputs the number
+add it to the btree, if root does not exist yet
+    create the node object and draw it
+    if root already exists recursive add node 
+
+On recursive add node
+traverse throught the node 
+if the data is less than the parent traverse left else right 
+
+
+
+Objects 
+
+BTree: represents the whole binary tree 
+- property context, Line, root=null;
+
+Line:
+- represents the line between two node
+- has function draw which draws the line between two nodes
+
+Node:
+- represents the node in the tree
+- has property leftNode=null and rightNode=null

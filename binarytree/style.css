@@ -1,0 +1,8 @@
+
+.center{
+    margin: auto;
+    width: 75%;
+}
+canvas{
+    border: rgba(0, 0, 20, 0.3) 1px solid;
+}
