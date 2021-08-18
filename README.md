@@ -24,8 +24,8 @@ Mini Projects showcasing single features using vannila js, css and html.
     <li><a href="#">Number Guessing Game</a>(Completed)</li>
     <li><a href="#">Bar Diagram</a>(ongoing)</li>
     <li><a href="https://github.com/Aashis2055/VanillaJS/blob/master/DancingMen/Readme.md">Dancing Men</a>(Completed)</li>
-    <li><a href="#">Binary Tree</a>(Completed)</li>
-    <li><a href="#">GoogleVisualization</a>(Completed)</li>
+    <li><a href="#">Binary Tree</a>(ongoing)</li>
+    <li><a href="#">GoogleVisualization</a>(ongoing)</li>
     <li><a href="#">hiragana</a>(ongoing)</li>
     <li><a href="#">Paint</a>(ongoing)</li>
     <li><a href="#">Pokemon</a>(ongoing)</li>
