@@ -21,7 +21,7 @@ function drop(event) {
 //function to show droped svg into div
 function onSVGDrop(event){
   event.preventDefault();
-  name = event.dataTransfer.files[0].name;
+  let name = event.dataTransfer.files[0].name;
   if(!name.includes('.svg')){
     errorField.innerText = "not a svg file";
   }else{
