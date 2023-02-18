@@ -2,26 +2,36 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  background-color: #eba43b;
+
 }
 h1{
   text-align: center;
   color: #789098;
 }
 .images{
-  background-color: #f69909;
   margin: 5px;
-  width: 75%;
+  width: 100%;
   text-align: center;
 }
+.images .btn{
+  margin: 10px;
+}
 .images .btn:hover{
-  background: #00ff00;
+  background-color: rgba(156, 122, 70, 0.5)
 }
 .btn{
   cursor: pointer;
   display: inline;
   float: left;
+  margin: 10px;
 }
 
+/*  */
 .form-layout{
   align-items: center;
   width: 100%;
@@ -31,13 +41,26 @@ h1{
 }
 
 .form-layout .form-input{
-  background-color: #ff0000;
+  border: 1px black solid;
+  box-shadow: 10px 5px 5px #789098;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   width: 50%;
   height: 300px;
   padding: 5px;
   margin: 10px;
+}
+input{
+  padding: 10px;
+  border: none;
+  margin: 5px;
+}
+.form-input button {
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px gray;
+  margin: 5px;
 }
 .form-layout .form-layout button{
   cursor: pointer;
@@ -50,8 +73,4 @@ h1{
 .encrypt{
   display: flex;
   flex-direction: row;
-}
-
-.decrypt{
-
 }

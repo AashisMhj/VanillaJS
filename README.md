@@ -25,10 +25,10 @@ Sources
 1. New Year Countdown status: Completed
 1. Drag Drop List status: Completed
 1. Number Guessing Game status: Completed
-1. Pokemon status: ongoing
+1. Pokemon status: Completed
+1. Dancing Men status: Completed
 ---
 1. Bar Diagram status: ongoing
-1. Readme.md">Dancing Men status: Completed
 1. Binary Tree status: ongoing
 1. GoogleVisualization status: ongoing
 1. hiragana status: ongoing
