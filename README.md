@@ -1,34 +1,37 @@
-<h1>VannilJS Mini Projects</h1>
+# VannilJS Mini Projects
 Mini Projects showcasing single features using vannila js, css and html.
+Sources 
+* [50day50project](https://github.com/bradtraversy/50projects50days)
+* [20day20project](https://github.com/bradtraversy/vanillawebprojects)
 
-<ul>
-    <li><a href="./1FormValidator/README.md">FormValidator</a> (Completed)</li>
-    <li><a href="#">MovieSeats</a>(Completed)</li>
-    <li><a href="#">Custom Video Player</a>(Completed)</li>
-    <li><a href="#">Exchange Rate Calculator</a>(Completed)</li>
-    <li><a href="#">Array Methods</a>(Completed)</li>
-    <li><a href="#">Menu Slider</a>(Completed)</li>
-    <li><a href="#">Hangman</a>(Completed)</li>
-    <li><a href="#">Meal Finder</a>(Completed)</li>
-    <li><a href="#">Expenss Tracker</a>(Completed)</li>
-    <li><a href="#">Music Player</a>(Completed)</li>
-    <li><a href="#">Infinate Scroll</a>(Completed)</li>
-    <li><a href="#">Typing Game</a>(Completed)</li>
-    <li><a href="#">Speech Text Reader</a>(Completed)</li>
-    <li><a href="#">Memory Card Game</a>(Completed)</li>
-    <li><a href="#">Lyrics Searcher</a>(Completed)</li>
-    <li><a href="#">Relaxer</a>(Completed)</li>
-    <li><a href="#">Breakout Game</a>(Completed)</li>
-    <li><a href="#">New Year Countdown</a>(Completed)</li>
-    <li><a href="#">Drag Drop List</a>(Completed)</li>
-    <li><a href="#">Number Guessing Game</a>(Completed)</li>
-    <li><a href="#">Bar Diagram</a>(ongoing)</li>
-    <li><a href="https://github.com/Aashis2055/VanillaJS/blob/master/DancingMen/Readme.md">Dancing Men</a>(Completed)</li>
-    <li><a href="#">Binary Tree</a>(ongoing)</li>
-    <li><a href="#">GoogleVisualization</a>(ongoing)</li>
-    <li><a href="#">hiragana</a>(ongoing)</li>
-    <li><a href="#">Paint</a>(ongoing)</li>
-    <li><a href="#">Pokemon</a>(ongoing)</li>
-    <li><a href="#">Sliding Puzzle</a>(ongoing)</li>
-    <li><a href="#">SVG Droplet</a>(ongoing)</li>
-</ul>
+
+1. FormValidator status: Completed
+1. MovieSeats status: Completed
+1. Custom Video Player status: Completed
+1. Exchange Rate Calculator status: Completed
+1. Array Methods status: Completed
+1. Menu Slider status: Completed
+1. Hangman status: Completed
+1. Meal Finder status: Completed
+1. Expense Tracker status: Completed
+1. Music Player status: Completed
+1. Infinite Scroll status: Completed
+1. Typing Game status: Completed
+1. Speech Text Reader status: Completed
+1. Memory Card Game status: Completed
+1. Lyrics Searcher status: Completed
+1. Relaxer status: Completed
+1. Breakout Game status: Completed
+1. New Year Countdown status: Completed
+1. Drag Drop List status: Completed
+1. Number Guessing Game status: Completed
+1. Pokemon status: ongoing
+---
+1. Bar Diagram status: ongoing
+1. Readme.md">Dancing Men status: Completed
+1. Binary Tree status: ongoing
+1. GoogleVisualization status: ongoing
+1. hiragana status: ongoing
+1. Paint status: ongoing
+1. Sliding Puzzle status: ongoing
+1. SVG Droplet status: ongoing
