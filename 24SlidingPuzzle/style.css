@@ -1,0 +1,26 @@
+body{
+    background-color: salmon;
+}
+
+.container{
+    width: 600px;
+    height: 600px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container .box{
+    height: 200px;
+    width: 200px;
+    padding: 4px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    cursor: pointer;
+}
