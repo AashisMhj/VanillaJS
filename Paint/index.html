@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Painter</title>
-    <style>
-    canvas{
-      border: 5px solid #ff0000;
-      width: 560px;
-      height: 360px;
-      cursor: crosshair;
-    }
-    </style>
-  </head>
-  <body>
-    <h2>Drawing with mouse event</h2>
-    <div class="container">
-      <canvas id="pic"></canvas>
-      <div class="pallet">
-        <div class="shapes">
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Paint App</title>
+</head>
+
+<body>
+  <div class="container">
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <div class="actions">
+      <div class="controller">
+        <div class="shapes">
+          <button id="circle-btn"><i class="fa-regular fa-circle"></i></button>
+          <button id="square-btn"><i class="fa-regular fa-square"></i></button>
         </div>
-        <div class="controller">
-          <span>Rectangle</span>
-          <span>Line</span>
-          <span>Circle</span>
-          <input type="color" name="color" id="input-color">
-          <button id="clear">Clear</button>
+        <div class="size">
+          <button id="decrease">+</button>
+          <span id="size">20</span>
         </div>
+        <input type="color" id="color">
       </div>
+      <button id="clear-btn" class="clear-btn">Clear</button>
     </div>
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+  </div>
+</body>
+
 </html>
