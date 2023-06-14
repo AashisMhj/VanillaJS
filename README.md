@@ -3,6 +3,7 @@ Mini Projects showcasing single features using vannila js, css and html.
 Sources 
 * [50day50project](https://github.com/bradtraversy/50projects50days)
 * [20day20project](https://github.com/bradtraversy/vanillawebprojects)
+* [css-tricks](https://css-tricks.com/)
 
 
 1. ## [FormValidator ](./1FormValidator/)
@@ -27,12 +28,6 @@ Sources
 1. ## [Number Guessing Game ](./20NumberGuessingGame/)
 1. ## [Pokemon ](./21Pokedex/)
 1. ## [Dancing Men ](./22Dancingmen/)
+
+1. ## [Circular Slider](./27CircularImageSlider/) [source](https://css-tricks.com/css-only-infinite-and-circular-image-slider/)
 ---
-**Ongoin**
-1. Bar Diagram
-1. Binary Tree
-1. GoogleVisualization
-1. hiragana
-1. Paint
-1. Sliding Puzzle
-1. SVG Droplet
