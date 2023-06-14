@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Filter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img id="image" src="image/1.jpg" alt="spider man homecoming" style="filter: brightness(100%) grayscale(0%) sepia(0%) invert(0%) blur(0px);">
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <div>
+                    <input id="blur" type="radio" name="filters" value="radio">
+                     <label for="">blur</label>
+                    <div>
+                        <input id="blurRange" type="range" min="0" max="50" value="0">
+                    </div>
+                </div>
+                <div>
+                    <input id="brightness" type="radio" name="brightness"> 
+                    <label for="">Brightness</label>
+                    <div>
+                        <input id="brightnessRange" type="range" min="0" max="200" value="100">
+                    </div>
+                </div>
+                <div>
+                    <input id="grayscale" type="radio" name="grayscale" >
+                     <label for="">Grayscale</label>
+                    <div>
+                        <input id="grayScaleRange" type="range" min="0" max="200" value="0">
+                    </div>
+                </div>
+                <div>
+                    <input id="invert" type="radio" name="invert">
+                     <label for="">Invert</label>
+                    <div>
+                        <input id="invertRange" type="range" min="0" max="100" value="0">
+                    </div>
+                </div>
+                <div>
+                    <input id="speia" type="radio" name="sepia"> 
+                    <label for="">Sepia</label>
+                    <div>
+                        <input id="sepiaRange" type="range" min="0" max="100" value="0">
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button id="download-btn" class="download-btn">Download</button>
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas" style="visibility: hidden;" ></canvas>
+    <script src="script.js"></script>
+</body> 
+</html>
